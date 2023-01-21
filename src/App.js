@@ -1,8 +1,8 @@
 import React from "react";
-import Poster from "./components/Poster";
+import Inventory from "./components/Inventory";
 
 export default function App() {
     return (
-        <Poster />
+        <Inventory />
     )
 }

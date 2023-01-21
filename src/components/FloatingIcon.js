@@ -3,11 +3,11 @@ import React from "react";
 export default function FloatingIcon(props) {
     const [showText, setShowText] = React.useState(false)
     const handleMouseEnter = e => {
-        e.target.style.background = "gray"
+        // e.target.style.background = "gray"
         setShowText(true)
     }
     const handleMouseLeave = e => {
-        e.target.style.background = "white"
+        // e.target.style.background = "white"
         setShowText(false)
     }
 
@@ -18,7 +18,7 @@ export default function FloatingIcon(props) {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-            !
+            <img className="floating-icon-image" src="https://media.giphy.com/media/xTiN0IuPQxRqzxodZm/giphy.gif" />
             </span>
             }
             {showText && <p>{props.description}</p>}
